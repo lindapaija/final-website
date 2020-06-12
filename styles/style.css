@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bellota";
+    src: url(../fonts/Bellota-Regular.ttf) format("TrueType");
+}
+
+@font-face {
+    font-family: "Glegoo";
+    src: url(../fonts/Glegoo-Regular.ttf) format("TrueType");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Glegoo";
+    src: url(../fonts/Glegoo-Bold.ttf) format("TrueType");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Titillium";
+    src: url(../fonts/Titillium-Regular.ttf) format("TrueType");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Titillium";
+    src: url(../fonts/Titillium-Bold.ttf) format("TrueType");
+    font-weight: bold;
+}
+
+
+body {
+    overflow: hidden;
+    background-color: #fff1c9;
+    width: 100%;
+    min-height:100%;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
