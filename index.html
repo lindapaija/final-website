@@ -1,4 +1,5 @@
-<html lang="en-US"><head>
+<html lang="en-US">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/style.css">
@@ -7,13 +8,26 @@
         <script src="./scripts/jquery-3.4.1.min.js"></script>
         <link rel="shortcut icon" href="./images/favicon.ico">
     </head>
-    <body style="overflow-y: visible;">
+    <body>
         <header>
             <nav class="top-nav">
-                <ul class="nav-items">
+                <div class="show-icon">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul id="nav-bar">
                     <li><a href="index.html" id="item1" class="active">Home</a></li>
-                    <li><a href="#" id="item1">Gallery</a></li>
-                    <li><a href="#" id="item1">Portfolio</a></li>
+                    <li><a href="#" id="item2">Contact</a></li>
+                    <li><a href="#" id="item3">Portfolio</a></li>
+                    <div class="close-icon">
+                        <svg data-v-020a9390="" viewBox="0 0 33 34" xmlns="http://www.w3.org/2000/svg" style="width:20px;">
+                            <g stroke="#fff" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                                <path d="M31.396 1.396L.152 32.641M31.648 32.648L.5 1.5"></path>
+                            </g>
+                        </svg>
+                    </div>
                 </ul>
                 <div class="nav-logo">
                     <a href="index.html"><img src="./images/linda-logo.png" alt="logo"></a>
@@ -21,20 +35,6 @@
                 <div class="social">
                     <a href="https://www.facebook.com/profile.php?id=100042546465603" target="_blank"><img src="./images/fb-icon.svg" alt="facebook icon"></a>
                     <a href="https://www.instagram.com/_linlin_daaa/" target="_blank"><img src="./images/insta-icon.svg" alt="instagram icon"></a>
-                </div>
-            </nav>
-            <nav class="side-nav">
-                <ul>
-                    <li><a href="index.html" id="nav2-1">Home</a></li>
-                    <li><a href="#" id="nav2-2">Contact</a></li>
-                    <li><a href="#" id="nav2-3">Portfolio</a></li>
-                </ul>
-                <div class="close-icon">
-                    <svg data-v-020a9390="" viewBox="0 0 33 34" xmlns="http://www.w3.org/2000/svg" style="height: 35px; line-height: 35px;">
-                        <g stroke="#96cdef" fill="none" fill-rule="evenodd" stroke-linecap="round">
-                            <path d="M31.396 1.396L.152 32.641M31.648 32.648L.5 1.5"></path>
-                        </g>
-                    </svg>
                 </div>
             </nav>
         </header>
@@ -67,8 +67,7 @@
                                 <img src="./images/bp.jpg" alt="Test post">
                             </div>
                             <div class="text-wrapper">
-                                <h2>Title</h2>
-                                <p>Description</p>
+                                <h2>Blackpink in your area</h2>
                             </div>
                         </a>
                     </div>
@@ -79,7 +78,6 @@
                             </div>
                             <div class="text-wrapper">
                                 <h2>Title</h2>
-                                <p>Description</p>
                             </div>
                         </a>
                     </div>
@@ -90,14 +88,47 @@
                             </div>
                             <div class="text-wrapper">
                                 <h2>Title</h2>
-                                <p>Description</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="post">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="./images/bp.jpg" alt="Test post">
+                            </div>
+                            <div class="text-wrapper">
+                                <h2>Title</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="post">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="./images/bp.jpg" alt="Test post">
+                            </div>
+                            <div class="text-wrapper">
+                                <h2>Title</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="post">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="./images/bp.jpg" alt="Test post">
+                            </div>
+                            <div class="text-wrapper">
+                                <h2>Title</h2>
                             </div>
                         </a>
                     </div>
                 </div>
             </section>
         </main>
+        <footer>
+            <p>All rights reserved &copy; Linda Paija</p>
+        </footer>
         <script src="scripts/main.js"></script>
+        <script src="scripts/index.js"></script>
         <script src="scripts/navigation.js"></script>
     
 </body></html>
