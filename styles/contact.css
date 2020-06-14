@@ -1,0 +1,181 @@
+.content {
+    margin: 25vh 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section {
+    background: #fff;
+    padding: 5%;
+    width: 30%;
+    height: 70vh;
+}
+
+.details {
+    width: 30%;
+}
+
+.form {
+    width: 45%;
+}
+
+.details {
+    font-family: Bellota;
+}
+
+.details > h1:before {
+    content: "";
+    border: 2px solid #e56954;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    max-width: 50px;
+}
+
+.details > h1 {
+    font-family: Glegoo;
+    font-size: 3vw;
+}
+
+.details > p {
+    font-size: 1.25vw;
+    margin: 5vh 0;
+}
+
+.form > h1:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("../images/mail.svg");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin-left: -40px;
+    margin-top: 8px;
+}
+
+.form > h1 {
+    font-family: Glegoo;
+    margin-left: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+form input {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 48%;
+    margin: 5% 0;
+}
+
+form input, form > textarea {
+    font-family: Titillium;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+form > label {
+    font-family: Glegoo;
+    margin: 5% 0 3% 0;
+    letter-spacing: 1px;
+}
+
+form > .input-row1, form > .input-row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+form > textarea {
+    padding: 2%;
+    resize: none;
+}
+
+form > #submit {
+    margin: 5% 0;
+    width: max-content;
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+    padding: 2% 10%;
+    transition: background 0.25s ease-in, color 0.25s ease-in;
+    font-family: Titillium;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+}
+
+form > #submit:hover {  
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+    .details > p {
+        font-size: 0.8em;
+        margin: 5vh 0;
+    }
+    
+    .form, .details {
+        height: max-content;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .content {
+        margin: 20vh 10% 10vh 10%;
+    }
+    
+    section {
+        margin: 5% 0;
+    }
+    
+    .details, .form {
+        width: 100%;
+    }
+    
+    .details > h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    section {
+        padding: 5% 10%;
+    }
+    
+    .details > h1 {
+        font-size: 1.5em;
+    }
+    
+    
+    .form > h1:before {
+        width: 18px;
+        height: 18px;
+        margin-top: 5px;
+        margin-left: -30px;
+    }
+
+    .form > h1 {
+        font-size: 1em;
+        margin-left: 30px;
+    }
+    
+    form > .input-row1, form > .input-row2 {
+        flex-direction: column;
+    }
+    
+    form input {
+        width: 100%;
+    }
+}

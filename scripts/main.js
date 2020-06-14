@@ -1,5 +1,8 @@
 $(window).on('load', () => {
-    $(".explore").css("display", "none");
-    $('body').delay(350).css({overflowY: 'visible'});
-    $('body').scrollLeft(0);
+    setTimeout(() => {
+        $('#loading-screen').fadeOut();
+        $('#loading-image').delay(350).fadeOut('slow');
+        $('body').delay(350).css({overflowY: 'visible'});
+        $('body').scrollLeft(0);
+    }, 1000);
 });

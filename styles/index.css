@@ -145,10 +145,6 @@
     font-size: 1.2em;
 }
 
-footer > p {
-    font-family: "Bellota";
-}
-
 @media (max-width: 1000px) {
     .img-wrapper > img {
         width: 22vw;

@@ -32,6 +32,31 @@
 }
 
 
+#loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff1c9;
+    z-index: 1000;
+}
+
+
+#loading-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/butterfly.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-50%, -50%);
+}
+
+
 body {
     overflow: hidden;
     background-color: #fff1c9;
@@ -51,4 +76,8 @@ footer {
     color: #fff;
     background: #343131;
     text-align: center;
+}
+
+footer > p {
+    font-family: "Bellota";
 }
