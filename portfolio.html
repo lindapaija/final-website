@@ -4,9 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="stylesheet" href="./styles/navigation.css">
-        <link rel="stylesheet" href="./styles/contact.css">
+        <link rel="stylesheet" href="./styles/port.css">
         <script src="./scripts/jquery-3.4.1.min.js"></script>
-        <title>Contact page</title>
+        <title>Home page</title>
         <link rel="shortcut icon" href="./images/favicon.ico">
     </head>
     <body>
@@ -23,8 +23,8 @@
                 </div>
                 <ul id="nav-bar">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="contact-me.html" class="active">Contact</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact-me.html">Contact</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
                     <div class="close-icon">
                         <svg data-v-020a9390="" viewBox="0 0 33 34" xmlns="http://www.w3.org/2000/svg" style="width:20px;">
                             <g stroke="#fff" fill="none" fill-rule="evenodd" stroke-linecap="round">
@@ -43,34 +43,42 @@
             </nav>
         </header>
         <main class="content">
-            <section class="details">
-                <h1>Contact Me</h1>
-                <p>Please leave me an enquiry if you have a question.</p>
-                <p>For collabration, please send an email to lindapaija8085@gmail.com.</p>
-                <p>Kathmandu,<br>New Baneshwor,<br>Buddhanagar</p>                
+            <section class="first-view">
+                <div class="contents">
+                    <h1>Welcome!</h1>
+                    <p>Click below to know about me</p>
+                    <button>>></button>
+                </div>
             </section>
-            <section class="form">
-                <h1>General enquiries</h1>
-                <form action="#">
-                    <div class="input-row1">
-                        <input id="name" type="text" placeholder="First name">
-                        <input id="name" type="text" placeholder="Last name">
-                    </div>
-                    <div class="input-row2">
-                        <input id="email" type="email" placeholder="user@domain.com">
-                        <input id="subject" type="subject" placeholder="Subject">
-                    </div>
-                    <label for="text">Your Message</label>
-                    <textarea placeholder="Message" rows="6" id="text"></textarea>
-                    <input type="submit" id="submit" value="Submit">
-                </form>
+            <section id="bio">
+                <img src="./images/linda-2.jpeg" alt="Linda smiling">
+                <div class="text-wrap">
+                    <h2>Linda Paija</h2>
+                    <p>I am a study-driven woman who strives to be as close as, if not, towards perfection. I am interested in various other things but the technological field has amazed me the most.
+                    Thats why I started my Bachelors in The British College as a student in Computing course. Although, its hard to grasp new ideas, I dont give up 
+                    easy and work more on my foundation on the basics to understand new technologies.</p>
+                    <p class="interests">Interests: Music esp. Kpop (Blink IYKWIM), Singing, Food, Travel, Dance, etc.</p>
+                </div>
+                <br>
+                <button>>></button>
+            </section>
+            <section id="skills">
+                <h1>Skills</h1>
+                <div class="layout">
+                    <div class="skill-wrapper"><div class="skill-level ps"><p>Problem Solving</p></div></div>
+                    <div class="skill-wrapper"><div class="skill-level ct"><p>Creative Thinking</p></div></div>
+                    <div class="skill-wrapper"><div class="skill-level cw"><p>Content Writing</p></div></div>
+                    <div class="skill-wrapper"><div class="skill-level gp"><p>Programming</p></div></div>
+                    <div class="skill-wrapper"><div class="skill-level wd"><p>Web Development</p></div></div>
+                    <div class="skill-wrapper"><div class="skill-level vc"><p>Version Control</p></div></div>
+                </div>
             </section>
         </main>
         <footer>
             <p>All rights reserved &copy; Linda Paija</p>
         </footer>
         <script src="scripts/main.js"></script>
-        <script src="scripts/contact.js"></script>
+        <script src="scripts/port.js"></script>
         <script src="scripts/navigation.js"></script>
     
 </body></html>
