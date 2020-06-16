@@ -1,11 +1,11 @@
 $(".contents > button").click(() => {
-    $("body").animate({
+    $("html, body").animate({
         scrollTop: $("#bio").offset().top
     }, 1000);
 });
 
 $("#bio > button").click(() => {
-    $("body").animate({
+    $("html, body").animate({
         scrollTop: $("#skills").offset().top
     }, 1000);
 });
