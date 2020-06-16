@@ -1,0 +1,401 @@
+.content {
+    margin: 10%;
+    font-family: Titillium;
+}
+
+.post-content {
+    margin-right: 10%;
+    display: inline-block;
+    width: 60%;
+}
+
+.post-content > h1 {
+    font-family: Glegoo;
+    font-size: 2.8vw;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.post-content > h3 {
+    font-weight: normal;
+}
+
+.post-content > h4 {
+    font-family: Bellota;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+
+.link {
+    color: #e56954;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post-content > a > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    filter: saturate(0);
+}
+
+.post-content > p {
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+
+.related {
+    width: 30%;
+    margin-top: 5%;
+    float: right;
+}
+
+.related > h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Glegoo;
+    font-weight: normal;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #e56954;
+}
+
+.thumbnail {
+    width: 22vw;
+    height: 14vw;
+    overflow: hidden;
+}
+
+.thumbnail > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0);
+    transition: transform 0.35s ease-in-out;
+}
+
+.post {
+    margin: 5% 0;
+    overflow: hidden;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.post:hover .thumbnail > img {
+    transform: scale(1.2);
+}
+
+.post > a {
+    text-decoration: none;
+}
+
+.text-wrapper {
+    width: 22vw;
+}
+
+.text-wrapper > h2 {
+    font-family: "Titillium";
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #885249;
+    font-size: 0.9em;
+}
+
+.post:hover .text-wrapper > h2 {
+    color: #000;
+}
+
+.load-comments {
+    width: 60%;
+    text-align: center;
+}
+
+#load {
+    background: #e56954;
+    color: #fff;
+    border: none;
+    margin: 5% 0;
+    padding: 2% 10%;
+    cursor: pointer;
+}
+
+#load:hover {
+    background: #562c26;
+}
+
+.comment-section {
+    width: 60%;
+    display: none;
+}
+
+.comment-section > h1 {
+    font-weight: normal;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+.comment-section input[type="text"], .comment-section textarea {
+    background: #343131;
+    width: 100%;
+    margin-bottom: 2%;
+    border: none;
+    padding: 3% 2%;
+    font-family: Bellota;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.comment-section input[type="text"]::placeholder, .comment-section textarea::placeholder {
+    color: #eaeaea;
+}
+
+.comment-section textarea {
+    resize: none;
+    letter-spacing: 0.5px;
+    font-size: 1.1em;
+}
+
+input[type="submit"] {
+    font-family: "Lobster2";
+    border: none;
+    color: #fff;
+    font-family: Titillium;
+    border-radius: 10px;
+    background: #e56954;
+    padding: 1% 2%;
+    float: right;
+    cursor: pointer;
+    font-size: 1em;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background: #885249;
+}
+
+.comments {
+    background: #343131;
+    margin-top: 10%;
+    padding: 5%;
+}
+
+.comments > h1 {
+    color: #fff;
+    font-size: 2vw;
+    font-weight: normal;
+}
+
+.comment {
+    background: #464646;
+    border-radius: 25px;
+    padding: 1% 7%;
+    margin: 5% 0;
+}
+
+.comment > h1 {
+    font-family: Glegoo;
+    margin-bottom: 0;
+    color: #e56954;
+}
+
+.comment > p {
+    letter-spacing: 1px;
+    color: #c5c5c5;
+    font-size: 1.2em;
+}
+
+.comment > button {
+    float: right;
+    margin-top: -22%;
+    margin-right: -5%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.comment > button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    
+    .post-content > h1 {
+        line-height: 1.5;
+    }
+    
+    .comment > h1 {
+        font-size: 1.2em;
+    }
+    
+    .comment > p {
+        font-size: 1em;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    
+    .content {
+        margin: 15% 10%;
+    }
+    
+    .related {
+        margin-top: 0;
+    }
+    
+    .comment-section textarea {
+        font-size: 0.9em;
+    }
+    
+    .comments {
+        margin-top: 20%;
+    }
+    
+    .comment > h1 {
+        font-size: 1em;
+    }
+    
+    .comment > p {
+        font-size: 0.9em;
+    }
+    
+    .comment > button {
+        margin-top: -25%;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .post-content {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .post-content > h3 {
+        font-size: 1em;
+    }
+    
+    .post-content > p {
+        font-size: 1em;
+    }
+    
+    .related {
+        float: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .related > h3 {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    
+    .thumbnail {
+        width: 25vw;
+        height: 16vw;
+    }
+    
+    .text-wrapper {
+        width: 25vw;
+    }
+    
+    .load-comments, .comment-section {
+        width: 100%;
+    }
+    
+    .comment > button {
+        margin-top: -20%;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .content {
+        margin: 20% 10%;
+    }
+    
+    .post-content > h1 {
+        font-size: 3.5vw;
+    }
+    
+    .post-content > h4 {
+        font-size: 0.9em;
+    }
+    
+    .thumbnail {
+        width: 35vw;
+        height: 25vw;
+    }
+    
+    .text-wrapper {
+        width: 35vw;
+    }
+    
+    .comment > button {
+        margin-top: -26%;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .content {
+        margin: 30% 10%;
+    }
+    
+    .post-content > h1 {
+        font-size: 1.3em;
+    }
+    
+    .post-content > h3 {
+        font-size: 0.9em;
+    }
+    
+    .post-content > h4 {
+        font-size: 0.75em;
+    }
+    
+    .thumbnail {
+        width: 100%;
+        height: 50vw;
+    }
+    
+    .text-wrapper {
+        width: 100%;
+    }
+    
+    .comment-section input[type="text"], .comment-section textarea {
+        padding: 4% 5%;
+        margin-bottom: 3%;
+    }
+    
+    input[type="submit"] {
+        padding: 2% 5%;
+        font-size: 0.8em;
+    }
+    
+    .comment {
+        padding: 1% 7% 5% 7%;
+        margin: 10% 0;
+    }
+    
+    .comment > p {
+        font-size: 0.8em;
+        margin: 0;
+    }
+    
+    .comment > button {
+        margin-top: -30%;
+        margin-right: 0;
+    }
+}

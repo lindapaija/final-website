@@ -102,14 +102,15 @@
 }
 
 .thumbnail {
-    width: 22vw;
-    height: 16vw;
+    width: 25vw;
+    height: 15vw;
     overflow: hidden;
 }
 
 .thumbnail > img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     filter: saturate(0);
     transition: transform 0.35s ease-in-out;
 }
@@ -133,16 +134,25 @@
     transform: scale(1.2);
 }
 
+.post:hover .text-wrapper > h2 {
+    color: #000;
+}
+
 .post > a {
     text-decoration: none;
+}
+
+.text-wrapper {
+    width: 25vw;
 }
 
 .text-wrapper > h2 {
     font-family: "Titillium";
     text-transform: capitalize;
     letter-spacing: 1px;
+    font-weight: normal;
     color: #885249;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 @media (max-width: 1000px) {
@@ -169,7 +179,7 @@
     }
     
     .text-wrapper > h2 {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
 
@@ -190,6 +200,10 @@
     .thumbnail {
         width: 35vw;
         height: 25vw;
+    }
+    
+    .text-wrapper {
+        width: 35vw;
     }
     
     .top-block {
@@ -258,6 +272,10 @@
     .thumbnail {
         width: 80vw;
         height: 55vw;
+    }
+    
+    .text-wrapper {
+        width: 80vw;
     }
     
     .post {
